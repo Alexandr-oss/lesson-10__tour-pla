@@ -30,6 +30,11 @@ body {
   padding-bottom: 40px;
 }
 
+.header__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +77,7 @@ body {
   text-decoration: none;
 }
 
-.user__acatar {
+.user__avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -81,6 +86,7 @@ body {
 }
 
 .user__name {
+  margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
   color: #333333;
