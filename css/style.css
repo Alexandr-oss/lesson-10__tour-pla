@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -644,6 +648,28 @@ template {
   line-height: 15px;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .stars {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,6 +749,93 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow_prev.svg);
+}
+
+.booking {
+  font-family: Nunito;
+  width: 350px;
+  min-height: 210px;
+  padding: 28px;
+  background-color: #0A223D;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 9px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__room {
+  margin-top: 4px;
+}
+
+.price__before {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.price__tag {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.price__after {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.quick-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.quick-section__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.phone {
+  color: #fff;
+}
+
+.quick__button {
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 13px 84px;
+  background-color: #ec1f46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .breadcrumb-list {
