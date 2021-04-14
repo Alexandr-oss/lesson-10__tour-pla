@@ -7,9 +7,14 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
+});
+const reviews = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
   },
 });
