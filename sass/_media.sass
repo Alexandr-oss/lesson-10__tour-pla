@@ -1,4 +1,4 @@
-@media (max-width: 1200px)
+@media screen and (max-width: 1200px)
   .container
     max-width: 960px
   .slider
@@ -9,12 +9,15 @@
         width: 100%
         height: 100%
         object-fit: cover
-@media (max-width: 992px)
+  .activities__cards .card
+    width: 230px
+    height: 230px
+@media screen and (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
-  .navbar
+  .media-navbar .navbar
     &-top
       padding: 30px 0
     &__search
@@ -24,26 +27,38 @@
       &__link
         font-size: 12px
         line-height: 15px
-  .search
+  .media-navbar .search
     &__input
       width: 340px
-  .hotel
+  .media-hotel .hotel
     &-grid
       flex-direction: column
     &-right
-      flex-direction: row !important
-  .booking
+      flex-direction: row
+  .hotel-right .booking
     width: 340px
-  .map
+  .hotel-right .map
     width: 340px
   .slider
     width: 100%
     margin-bottom: 30px
-@media (max-width: 768px)
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
+  .activities
+    &__cards
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .activities__cards .card
+    width: 340px
+    height: 250px
+@media screen and (max-width: 768px)
   .contaner
     max-width: 576px
     width: 92%
-  .navbar
+  .media-navbar .navbar
     &__search, &-menu, &__user
       display: none
   .menu
@@ -65,7 +80,7 @@
   .stars
     flex-basis: auto
     justify-content: flex-end
-  .hotel
+  .media-hotel .hotel
     &-name
       flex-basis: 100%
     &-wrapper
@@ -81,16 +96,17 @@
       &__offer
         order: -1
         margin-left: 0px
-  .slider
-    height: 350px
-  .hotel
     &-right
       flex-direction: column
       min-height: 450px
-  .booking
+  .slider
+    height: 350px
+  .hotel-right .booking
     width: 100%
-  .map
-    height: 100%
+    &__button
+      width: 100%
+  .hotel-right .map
+    width: 100%
   .newsletter
     &-wrapper
       max-width: 576px
@@ -98,14 +114,31 @@
       display: flex
       flex-direction: column
       align-items: flex-start
-@media (max-width: 576px)
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, &:before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          margin-left: -65px
+          transform: translate(-50%, 0)
+          left: 50%
+        &--next
+          margin-right: -65px
+          transform: translate(50%, 0)
+          right: 50%
+  .activities__cards .card
+    width: 47%
+    height: 255px
+@media screen and (max-width: 576px)
   .container
     max-width: 480px
   .logo
     width: 99px
-@media (max-width: 320)
-  .container
-    max-width: 250px
+@media screen and (max-width: 420)
   .slider
     width: 250px
   .hotel
@@ -117,3 +150,6 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .activities__cards .card
+    width: 100%
+    height: 255px
