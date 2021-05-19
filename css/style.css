@@ -130,6 +130,12 @@ h1, h2, h3 {
   .media-navbar .navbar__search, .media-navbar .navbar-menu, .media-navbar .navbar__user {
     display: none;
   }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1432,22 +1438,20 @@ li {
 }
 
 .footer {
+  padding: 108px 0 46px 0;
   background-color: #0A223D;
-  padding: 108px 166px 46px 161px;
   color: #BDBDBD;
 }
 
-.footer__information {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .information {
-  margin-bottom: 94px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 166px 160px 251px 195px;
+      grid-template-columns: 166px 160px 251px 195px;
+  -ms-grid-rows: 223px;
+      grid-template-rows: 223px;
+  grid-gap: 120px;
+  margin-bottom: 95px;
 }
 
 .information__title {
@@ -1460,74 +1464,48 @@ li {
   color: #fff;
 }
 
-.link__social {
+.information__link {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 41px;
-}
-
-.link__img {
-  margin-left: 12px;
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 495px 540px;
+      grid-template-columns: 495px 540px;
+  grid-gap: 81px;
 }
 
-.datails__ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-top: 20px;
+.datails__li {
+  margin-bottom: 20px;
 }
 
-.datails__icon {
-  margin-right: 20px;
-}
-
-.message {
-  margin-left: 81px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.message__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 255px 255px;
+      grid-template-columns: 255px 255px;
+  grid-row-gap: 15px;
+  grid-column-gap: 30px;
 }
 
 .message__input {
-  width: 255px;
-  padding: 18px;
+  padding: 18px 23px 17px 23px;
   border-radius: 4px;
-  margin-bottom: 15px;
 }
 
 .message__textarea {
-  width: 513px;
+  margin-bottom: 22px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
   padding: 23px;
   border-radius: 4px;
-}
-
-.message__end {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .message__button {
@@ -1536,11 +1514,6 @@ li {
   color: #fff;
   background: #ec1f46;
   border-radius: 4px;
-  margin-right: 260px;
-  margin-top: 22px;
-}
-
-.message__span {
-  margin-top: 50px;
+  margin-right: 250px;
 }
 /*# sourceMappingURL=style.css.map */

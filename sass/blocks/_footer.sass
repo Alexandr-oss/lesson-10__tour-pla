@@ -1,12 +1,13 @@
 .footer
+  padding: 108px 0 46px 0
   background-color: $dark
-  padding: 108px 166px 46px 161px
   color: #BDBDBD
-  &__information
-    display: flex
-    justify-content: space-between
 .information
-  margin-bottom: 94px
+  display: grid
+  grid-template-columns: 166px 160px 251px 195px
+  grid-template-rows: 223px
+  grid-gap: 120px
+  margin-bottom: 95px
   &__title
     margin-bottom: 20px
     font-style: normal
@@ -15,50 +16,39 @@
     line-height: 23px
     text-transform: uppercase
     color: #fff
-.link
-  &__social
+  &__link
     font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 23px
     color: #fff
     text-transform: uppercase
-    margin-right: 41px
-  &__img
-    margin-left: 12px
 .contacts
-  display: flex
-  justify-content: space-between
+  display: grid
+  grid-template-columns: 495px 540px
+  grid-gap: 81px
 .datails
-  &__ul
-    display: flex
-    flex-direction: column
-    align-items: flex-start
-    margin-top: 20px
-  &__icon
-    margin-right: 20px
+  &__li
+    margin-bottom: 20px
 .message
-  margin-left: 81px
-  align-items: flex-end
+  &__form
+    display: grid
+    grid-template-columns: 255px 255px
+    grid-row-gap: 15px
+    grid-column-gap: 30px
   &__input
-    width: 255px
-    padding: 18px
+    padding: 18px 23px 17px 23px
     border-radius: 4px
-    margin-bottom: 15px
   &__textarea
-    width: 513px
+    margin-bottom: 22px
+    grid-column-start: 1
+    grid-column-end: 3
     padding: 23px
     border-radius: 4px
-  &__end
-    display: flex
-    justify-content: space-between
   &__button
     width: 160px
     height: 50px
     color: #fff
     background: $primery
     border-radius: 4px
-    margin-right: 260px
-    margin-top: 22px
-  &__span
-    margin-top: 50px
+    margin-right: 250px
