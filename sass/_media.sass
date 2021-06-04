@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px)
+@media (max-width: 1200px)
   .container
     max-width: 960px
   .slider
@@ -14,10 +14,10 @@
     height: 230px
   .packages
     display: none
-  .information
-    &__categories
-
-@media screen and (max-width: 992px)
+  .footer
+    &__input
+      flex-basis: 100%
+@media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
   .logo
@@ -59,7 +59,14 @@
   .activities__cards .card
     width: 340px
     height: 250px
-@media screen and (max-width: 768px)
+  .footer
+    &__logo
+      grid-row: 1 / 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+@media (max-width: 768px)
   .contaner
     max-width: 576px
     width: 92%
@@ -159,12 +166,17 @@
   .activities__cards .card
     width: 47%
     height: 255px
-@media screen and (max-width: 576px)
+  .footer, .media
+    &__contact-details
+      grid-column-start: auto
+    &__message
+      grid-column: span 4
+@media (max-width: 576px)
   .container
     max-width: 480px
   .logo
     width: 99px
-@media screen and (max-width: 420)
+@media (max-width: 420)
   .slider
     width: 250px
   .hotel
