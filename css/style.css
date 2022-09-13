@@ -826,8 +826,20 @@ template {
   color: #fff;
   border-radius: 8px;
 }
+.booking-info__input {
+  padding: 10px 75px 10px 33px;
+  width: 100%;
+  border: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
 
 .quick__button {
+  width: 100%;
   color: #fff;
   font-size: 14px;
   line-height: 19px;
