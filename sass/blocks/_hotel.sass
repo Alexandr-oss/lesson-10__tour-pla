@@ -3,12 +3,7 @@
   padding-bottom: 70px
   &-info
     display: flex
-    align-items: center
-    justify-content: space-between
     padding-bottom: 20px
-    &__offer
-      margin-left: 14px
-      margin-top: 4px
     &__name
       margin-top: 10px
       margin-bottom: 0
@@ -19,15 +14,10 @@
     line-height: 30px
   &-wrapper
     display: flex
-    flex-wrap: wrap
     align-items: center
   &-description
     font-size: 12px
     line-height: 15px
-  &-right
-    display: flex
-    flex-direction: column
-    justify-content: space-between
   &-grid
     display: flex
     justify-content: space-between
@@ -47,26 +37,6 @@
       bottom: 0
       background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
       z-index: 10
-.stars
-  display: flex
-  width: 100%
-.offer
-  font-size: 10px
-  line-height: 13px
-  padding: 4px 9px
-  background-color: $primery
-  border-radius: 3px
-  color: #fff
-.rating
-  max-width: 65px
-  min-height: 45px
-  text-align: center
-  color: #fff
-  background-color: $primery
-  border-radius: 4px
-  &__text
-    font-size: 8px
-    line-height: 10px
 
 .slider
   max-width: 728px
@@ -94,41 +64,12 @@
 .booking
   font-family: Nunito
   width: 350px
-  height: 210px
+  height: 100%
   padding: 28px
   background-color: $dark
   color: #fff
   border-radius: 8px
-  &__info
-    display: flex
-    margin-bottom: 9px
-    justify-content: space-between
-  &__price
-    display: flex
-    flex-direction: column
-  &__room
-    margin-top: 4px
-.price
-  &__before
-    font-size: 10px
-    line-height: 14px
-  &__tag
-    font-weight: 800
-    font-size: 24px
-    line-height: 33px
-  &__after
-    font-size: 10px
-    line-height: 14px
-.quick-section
-  display: flex
-  justify-content: space-between
-  margin-bottom: 17px
-  &__text
-    font-weight: 600
-    font-size: 18px
-    line-height: 25px
-.phone
-  color: #fff
+
 .quick
   &__button
     color: #fff
@@ -139,8 +80,3 @@
     border: none
     border-radius: 4px
     cursor: pointer
-.map
-  display: flex
-  width: 347px
-  border-radius: 10px
-  overflow: hidden
