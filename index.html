@@ -37,10 +37,10 @@
               <a href="#" class="navbar-menu__link">Работы</a>
             </div>
             <div class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Отзывы</a>
+              <a href="#callback" class="navbar-menu__link">Отзывы</a>
             </div>
             <div class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Прайс лист</a>
+              <a href="#pricelist" class="navbar-menu__link">Прайс лист</a>
             </div>
             <div class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">О нас</a>
@@ -108,7 +108,7 @@
                 pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                 placeholder="+7(___)___-__-__">
             </div>
-            <button data-toggle="modal" class="booking__button quick__button">Перезвоните мне</button>
+            <button class="booking__button quick__button">Перезвоните мне</button>
           </div>
           <!-- /.booking -->
         </div>
@@ -122,42 +122,34 @@
 
   <section class="packages">
     <div class="container">
-      <h2 class="packages__title">Other Packages</h2>
+      <h2 class="packages__title">Сделанные объекты</h2>
       <div class="packages__grid">
 
         <div class="item item-one">
           <img class="item__image-one" src="img/packages_item/item_1.jpg" alt="">
           <div class="item__info item__info-one">
-            <div class="stars">
-              <img src="img/Star.svg" alt="Star">
-              <img src="img/Star.svg" alt="Star">
-              <img src="img/Star.svg" alt="Star">
-              <img src="img/Star.svg" alt="Star">
-              <img src="img/Star.svg" alt="Star">
-            </div>
-            <h3 class="item__title">Hotel Blue Haven</h3>
-            <p class="item-one__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum
-              magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur
-              excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+            <h3 class="item__title">Работа вот такая</h3>
+            <p class="item-one__text">Было сделано вот это и вот это. Это стоило мне вот такого и сякого. На этот объект
+              ушло столько-то времени и вот столько личных затрат. Заказчик остался доволен.
             </p>
             <ul class="item__ul">
               <li>
                 <img src="img/Vector.svg" alt="Vector">
-                <span>1749 Wheeler Ridge Delaware</span>
+                <span>село Такое, улица Сякая</span>
               </li>
               <li>
                 <img src="img/user.svg" alt="User">
-                <span>2 x Guests</span>
+                <span>Команда из 2 человек</span>
               </li>
               <li>
                 <img src="img/home.svg" alt="Home">
                 <span>1 x Room</span>
               </li>
             </ul>
-            <del class="price-old">$ 10,500</del>
+            <del class="price-old">₽ 10,500</del>
             <div class="price">
-              <span class="price-new">$ 8,500</span>
-              <button class="price__button card__button">Book now</button>
+              <span class="price-new">₽ 8,500</span>
+              <button class="price__button card__button">Узнать больше</button>
             </div>
             <!--/.price-->
           </div>
@@ -182,10 +174,10 @@
                 <span>1 x Room</span>
               </li>
             </ul>
-            <del class="price-old">$ 8,500</del>
+            <del class="price-old">₽ 8,500</del>
             <div class="price">
-              <span class="price-new">$ 3,000</span>
-              <button class="price__button card__button">Book now</button>
+              <span class="price-new">₽ 3,000</span>
+              <button class="price__button card__button">Узнать больше</button>
             </div>
           </div>
         </div>
@@ -209,10 +201,10 @@
                 <span>1 x Room</span>
               </li>
             </ul>
-            <del class="price-old">$ 10,500</del>
+            <del class="price-old">₽ 10,500</del>
             <div class="price">
-              <span class="price-new">$ 9,500</span>
-              <button class="price__button card__button">Book now</button>
+              <span class="price-new">₽ 9,500</span>
+              <button class="price__button card__button">Узнать больше</button>
             </div>
           </div>
           <!--/.item__info-->
@@ -237,10 +229,10 @@
                 <span>1 x Room</span>
               </li>
             </ul>
-            <del class="price-old">$ 4,500</del>
+            <del class="price-old">₽ 4,500</del>
             <div class="price">
-              <span class="price-new">$ 2,500</span>
-              <button class="price__button card__button">Book now</button>
+              <span class="price-new">₽ 2,500</span>
+              <button class="price__button card__button">Узнать больше</button>
             </div>
           </div>
         </div>
@@ -264,10 +256,10 @@
                 <span>1 x Room</span>
               </li>
             </ul>
-            <del class="price-old">$ 6,500</del>
+            <del class="price-old">₽ 6,500</del>
             <div class="price">
-              <span class="price-new">$ 3,500</span>
-              <button class="price__button card__button">Book now</button>
+              <span class="price-new">₽ 3,500</span>
+              <button class="price__button card__button">Узнать больше</button>
             </div>
           </div>
         </div>
@@ -279,20 +271,18 @@
   <!-- /.packages -->
   <section class="newsletter">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title">subscribe to our
-        <span class="newsletter-title__strong">Newsletter</span>
+      <h2 class="newsletter-title">Оставьте свои данные и мы
+        <span class="newsletter-title__strong">свяжемся с Вами</span>
       </h2>
-      <form action="#" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" />
-        <button class="subscribe__button">send</button>
-      </form>
+
+      <button data-modal class="subscribe__button">Перезвоните мне</button>
     </div>
     <!-- /.newsletter-wraper -->
   </section>
   <!-- /.newsletter -->
-  <section class="reviews">
+  <section id="callback" class="reviews">
     <div class="container">
-      <h2 class="reviews-title">What people think about us</h2>
+      <h2 class="reviews-title">Отзывы</h2>
       <!-- Slider main container -->
       <div class="swiper-container reviews-slider">
         <div class="swiper-wrapper">
@@ -300,47 +290,41 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-profile">
-                <img src="img/profile-avatar.jpg" alt="Photo: Megan Fox" class="reviews-profile__avatar">
-                <h3 class="reviews-profile__username">Megan Fox</h3>
-                <span class="reviews-profile__date">Stayed 18 Nov, 2019</span>
-                <div class="reviews-profile__stars">
-                  <img src="img/Star.svg" alt="Star">
-                  <img src="img/Star.svg" alt="Star">
-                  <img src="img/Star.svg" alt="Star">
-                  <img src="img/Star.svg" alt="Star">
-                  <img src="img/Star.svg" alt="Star">
-                </div>
+                <img src="img/Zeka.jpg" alt="Photo: Evgeniy" class="reviews-profile__avatar">
+                <h3 class="reviews-profile__username">Евгений</h3>
+                <span class="reviews-profile__date">село Ягодное, п.Мечта</span>
               </div>
               <!-- /.profile -->
-              <p class="reviews-slide__text">It was very nice hotel with cleanliness. Staff behavior was good and
-                polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to
-                3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was
-                good and support of the staff was also very nice. Location is not good as per atmosphere, it is very
-                nearby most of the popular places but self location in a narrow street is not good. Overall it was a
-                good experience and could recommend. </p>
+              <p class="reviews-slide__text">Очень здорово, мне понравилось сотрудничать с Виктором. Профессионал в
+                своем деле, что было особенно приятно - даст совет, проконсультирует на будущее, делает на совесть. Пять
+                лет уже как сделано и ни разу ничего не сломалось.</p>
             </div>
           </div>
           <!-- /.swiper-slide -->
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-profile">
-                <img src="img/profile-avatar-2.jpg" alt="Photo: Jhon Weasly" class="reviews-profile__avatar">
-                <h3 class="reviews-profile__username">Jhon Weasly</h3>
-                <span class="reviews-profile__date">Stayed 22 Dec, 2018</span>
-                <div class="reviews-profile__stars">
-                  <img src="img/Star.svg" alt="Star">
-                  <img src="img/Star.svg" alt="Star">
-                  <img src="img/Star.svg" alt="Star">
-                  <img src="img/Star.svg" alt="Star">
-                  <img src="img/Star.svg" alt="Star">
-                </div>
+                <img src="img/kate.jpg" alt="Photo: Kate" class="reviews-profile__avatar">
+                <h3 class="reviews-profile__username">Екатерина</h3>
+                <span class="reviews-profile__date">г.Тольятти</span>
               </div>
               <!-- /.profile -->
-              <p class="reviews-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit
-                quia eligendi excepturi fugiat optio similique sint in quaerat. Mollitia sit quae harum fugiat voluptas
-                amet iure eum incidunt quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laborum
-                nulla mollitia nobis quaerat reiciendis optio labore incidunt culpa eaque doloremque qui vel enim velit
-                recusandae eius, nihil distinctio officiis. </p>
+              <p class="reviews-slide__text">Долго думали с мужем кого найти, чтобы качественно сделали ремонт.
+                Переделывать было нужно полностью все, от разеток до щитка. Работа была большая, но по рекмендации
+                друзей, позвонили Виктору. Работа стоила своих денег, остались довольны.</p>
+            </div>
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-profile">
+                <img src="img/Alex.jpg" alt="Photo: Alex" class="reviews-profile__avatar">
+                <h3 class="reviews-profile__username">Александр</h3>
+                <span class="reviews-profile__date">г.Тольятти</span>
+              </div>
+              <!-- /.profile -->
+              <p class="reviews-slide__text">Мастер очень хороший, грамотный в своем деле. Переделывал за другим
+                мастером, сгорела проводка, быстро нашел способ решения проблемы, все заменил. Работает, спасибо.</p>
             </div>
           </div>
           <!-- /.swiper-slide -->
@@ -355,32 +339,32 @@
     <!-- /.container -->
   </section>
   <!-- /.reviews -->
-  <section class="activities">
+  <section id="pricelist" class="activities">
     <div class="container">
-      <h2 class="activities__title">Other Activities</h2>
+      <h2 class="activities__title">Все услуги</h2>
       <div class="activities__cards">
         <div class="card activities__card">
           <img src="img/card-1.jpg" alt="The curious corner of chamarel" class="card__image">
-          <h3 class="card__title">The curious corner of chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <h3 class="card__title">Установка светильников</h3>
+          <button class="card__button">Узнать больше</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/card-2.jpg" alt="Gymkhana club golf course" class="card__image">
-          <h3 class="card__title">Gymkhana club golf course</h3>
-          <button class="card__button">Book Now</button>
+          <h3 class="card__title">Установка разеток</h3>
+          <button class="card__button">Узнать больше</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/card-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
-          <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-          <button class="card__button">Book Now</button>
+          <h3 class="card__title">Установка щитка</h3>
+          <button class="card__button">Узнать больше</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/card-4.jpg" alt="The blue marine discovery quest" class="card__image">
-          <h3 class="card__title">The blue marine discovery quest</h3>
-          <button class="card__button">Book Now</button>
+          <h3 class="card__title">Установка еще чего-то</h3>
+          <button class="card__button">Узнать больше</button>
         </div>
         <!-- /.card -->
       </div>
@@ -392,34 +376,18 @@
     <div class="container">
       <div class="footer-information">
         <img src="img/vertical-logo.svg" alt="" class="footer__logo">
-        <div class="footer__list footer__categories">
-          <h3 class="footer__title">ALL CATEGORIES</h3>
-          <ul>
-            <li class="footer__item"><a href="#">All Deals</a></li>
-            <li class="footer__item"><a href="#">Hotels</a></li>
-            <li class="footer__item"><a href="#">Activities</a></li>
-            <li class="footer__item"><a href="#">Spa Packages</a></li>
-            <li class="footer__item"><a href="#">Hotel Day Packages</a></li>
-            <li class="footer__item"><a href="#">Restaurants</a></li>
-            <li class="footer__item"><a href="#">Fitness</a></li>
-            <li class="footer__item"><a href="#">Rodrigues</a></li>
-          </ul>
-        </div>
 
         <div class="footer__list footer__additional">
           <h3 class="footer__title">ADDITIONAL INFORMATON</h3>
           <ul>
-            <li class="footer__item"><a href="#">About Us</a></li>
-            <li class="footer__item"><a href="#">Contact Us</a></li>
-            <li class="footer__item"><a href="#">How does it work?</a></li>
-            <li class="footer__item"><a href="#">Frequently Asked Questions</a></li>
-            <li class="footer__item"><a href="#">Deals.mu loyalty program</a></li>
-            <li class="footer__item"><a href="#">Promote your Business on BTP</a></li>
+            <li class="footer__item"><a href="#">О нас</a></li>
+            <li class="footer__item"><a href="#">Вернуться к проектам</a></li>
+            <li class="footer__item"><a href="#">Политика конфиденциальности</a></li>
           </ul>
         </div>
 
         <div class="footer__social-network">
-          <span class="footer__title footer__title--inline">Social Network</span>
+          <span class="footer__title footer__title--inline">Социальные сети для связи</span>
           <div class="footer__social-links">
             <a class="footer__social-link" href="#"><img src="img/fb.svg" alt=""></a>
             <a class="footer__social-link" href="#"><img src="img/yt.svg" alt=""></a>
@@ -427,54 +395,37 @@
           </div>
         </div>
 
-        <div class="footer__list footer__legal">
-          <h3 class="footer__title">LEGAL INFORMATON</h3>
-          <ul>
-            <li class="footer__item"><a href="#">Terms & Conditions</a></li>
-            <li class="footer__item"><a href="#">Disclaimer</a></li>
-            <li class="footer__item"><a href="#">Cancellation policy</a></li>
-            <li class="footer__item"><a href="#">Privacy</a></li>
-          </ul>
-        </div>
 
         <div class="footer__contact-details">
-          <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+          <h3 class="footer__title footer__title--mb-3">Контакты</h3>
           <p class="footer__text">
-            Feel free to contact us by phone, email or by our contact form</p>
+            Можете оставить свои контактные данные для связи, а так же связаться с нами самостоятельно</p>
 
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/Vector.svg" alt="">
-              </div>
-              9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
-            </li>
-            <li class="footer__item footer__item--mb-2">
-              <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/phone-call.svg" alt="">
               </div>
-              Tel (business hours) : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) <br>
+              Tel : 269 1500 <br>
+              Tel : 8-888-888-88-88 <br>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/mail.svg" alt="">
               </div>
-              cherly.lawson@example.com
+              почта@example.com
             </li>
           </ul>
         </div>
         <!--/.contact-details-->
         <div class="footer__message">
-          <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+          <h3 class="footer__title footer__title--mb-3">Отправьте сообщение</h3>
           <form action="send.php" method="POST" class="footer__form">
-            <input class="footer__input" type="text" placeholder="Your Full Name*" name="name">
-            <input class="footer__input" type="text" placeholder="Phone Number*" name="phone">
-            <textarea class="footer__textarea" placeholder="Message" name="message"></textarea>
+            <input class="footer__input" type="text" placeholder="Ваше полное имя*" name="name">
+            <input class="footer__input" type="text" placeholder="Номер телефона*" name="phone">
+            <textarea class="footer__textarea" placeholder="Комментарий" name="message"></textarea>
 
-            <button class="button footer__button">Send</button>
-            <span class="footer__info">* Required Fields</span>
+            <button class="button footer__button">Отправить</button>
           </form>
         </div>
         <!-- /.footer__message -->
@@ -488,17 +439,15 @@
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
-      <a href="#" class="modal__close">
-        <img src="img/close.svg" alt="">
-      </a>
-      <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
+      <a data-close href="#" class="modal__close">&times;</a>
+      <h3 class="modal__title modal__title--mb-3">Отправьте нам сообщение и мы перезвоним Вам</h3>
       <form action="send.php" method="POST" class="modal__form">
-        <input class="modal__input" type="text" placeholder="Your Full Name*" name="name">
-        <input class="modal__input" type="text" placeholder="Phone Number*" name="phone">
-        <textarea class="modal__textarea" placeholder="Message" name="message"></textarea>
+        <input class="modal__input" type="text" placeholder="Ваше полное имя*" name="name">
+        <input class="modal__input" type="text" placeholder="Ваш номер*" name="phone">
+        <textarea class="modal__textarea" placeholder="Комментарий" name="message"></textarea>
 
-        <button class="button modal__button">Send</button>
-        <span class="modal__info">* Required Fields</span>
+        <button class="button modal__button">Отправить</button>
+        <span class="modal__info">* Поле обязательно для заполнения</span>
       </form>
     </div>
     <!-- /.modal__dialog -->

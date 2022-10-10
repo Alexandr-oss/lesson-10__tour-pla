@@ -22,15 +22,13 @@ $(document).ready(function () {
 
   var menuButton = document.querySelector(".menu-button");
 
-  menuButton.addEventListener("click", function () {});
-
-  var modalButton = $("[data-toggle=modal]");
+  var modalButton = $("[data-modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
-  closeNodalButton.on("click", closeModal);
+  closeModalButton.on("click", closeModal);
 
   function openModal() {
-    var targetModal = $(this).attr("data-href");
+    var targetModal = $(this).attr("data-modal");
     $(targetModal).find(".modal__overlay").addClass(".modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass(".modal__dialog--visible");
   }
