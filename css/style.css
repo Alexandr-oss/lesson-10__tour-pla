@@ -92,10 +92,8 @@ h1, h2, h3 {
     flex-direction: row;
   }
   .hotel-right .booking {
-    width: 340px;
-  }
-  .hotel-right .map {
-    width: 340px;
+    width: 100%;
+    margin-bottom: 30px;
   }
   .slider {
     width: 100%;
@@ -1124,8 +1122,7 @@ li {
   grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
   grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-gap: 20px;
-  grid-auto-rows: minmax(40px, -webkit-min-content);
-  grid-auto-rows: minmax(40px, min-content);
+  grid-template-rows: 132px 132px;
 }
 .footer__title {
   margin-bottom: 16px;
@@ -1142,28 +1139,28 @@ li {
 .footer__title--mb-3 {
   margin-bottom: 30px;
 }
-.footer__logo {
-  grid-row: 1/3;
-  align-self: center;
-}
 .footer__item {
   display: flex;
   align-items: flex-start;
 }
+.footer__item:hover {
+  color: #fff;
+}
 .footer__item--mb-2 {
   margin-bottom: 20px;
+}
+.footer__item--mb-2:hover {
+  cursor: pointer;
 }
 .footer__icon-wrapper {
   min-width: 40px;
 }
-.footer__categories {
-  grid-row: 1/4;
-}
 .footer__social-network {
   display: flex;
-  align-items: start;
-  grid-row: 2/4;
+  align-items: end;
+  grid-row: 2;
   grid-column: span 2;
+  padding-bottom: 15px;
 }
 .footer__social-links {
   display: flex;
@@ -1172,10 +1169,12 @@ li {
   justify-content: space-between;
 }
 .footer__contact-details {
-  grid-column-start: span 2;
+  grid-column-start: 2/3;
+  grid-row: 1/2;
 }
 .footer__message {
   grid-column-start: span 2;
+  grid-row: 1/3;
 }
 .footer__form {
   display: flex;
@@ -1221,6 +1220,14 @@ li {
   line-height: 15px;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1229,12 +1236,6 @@ li {
   bottom: 0;
   background: rgba(0, 143, 223, 0.39);
   z-index: 100;
-  visibility: hidden;
-  opacity: 0;
-}
-.modal__overlay--visible {
-  visibility: visible;
-  opacity: 1;
 }
 .modal__dialog {
   position: fixed;
@@ -1247,12 +1248,6 @@ li {
   border-radius: 8px;
   color: #fff;
   z-index: 101;
-  visibility: hidden;
-  opacity: 0;
-}
-.modal__dialog--visible {
-  visibility: visible;
-  opacity: 1;
 }
 .modal__close {
   position: absolute;

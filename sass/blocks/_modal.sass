@@ -1,3 +1,8 @@
+.show
+  display: block
+.hide
+  display: none
+
 .modal
   &__overlay
     position: fixed
@@ -7,11 +12,6 @@
     bottom: 0
     background: rgba(0, 143, 223, 0.39)
     z-index: 100
-    visibility: hidden
-    opacity: 0
-    &--visible
-      visibility: visible
-      opacity: 1
   &__dialog
     position: fixed
     top: 50%
@@ -23,11 +23,6 @@
     border-radius: 8px
     color: #fff
     z-index: 101
-    visibility: hidden
-    opacity: 0
-    &--visible
-      visibility: visible
-      opacity: 1
   &__close
     position: absolute
     right: 18px

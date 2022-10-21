@@ -17,7 +17,7 @@
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
-          <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
+
         </a>
         <button class="menu-button">
           <span class="menu-button__line"></span><span class="menu-button__line"></span><span
@@ -34,7 +34,7 @@
         <div class="container">
           <ul class="navbar-menu">
             <div class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Работы</a>
+              <a href="#works" class="navbar-menu__link">Работы</a>
             </div>
             <div class="navbar-menu__item">
               <a href="#callback" class="navbar-menu__link">Отзывы</a>
@@ -79,13 +79,13 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide.jpg" alt="slide">
+                <img class="swiper-slide__image" src="img/first_slide.jpeg" alt="slide">
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide.jpg" alt="slide">
+                <img class="swiper-slide__image" src="img/second_slide.jpg" alt="slide">
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide.jpg" alt="slide">
+                <img class="swiper-slide__image" src="img/third_slide.jpg" alt="slide">
               </div>
             </div>
             <!-- If we need pagination -->
@@ -120,7 +120,7 @@
     <!-- /.container -->
   </section>
 
-  <section class="packages">
+  <section id="works" class="packages">
     <div class="container">
       <h2 class="packages__title">Сделанные объекты</h2>
       <div class="packages__grid">
@@ -375,10 +375,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-information">
-        <img src="img/vertical-logo.svg" alt="" class="footer__logo">
 
         <div class="footer__list footer__additional">
-          <h3 class="footer__title">ADDITIONAL INFORMATON</h3>
+          <h3 class="footer__title footer__title--mb-3">Основная информация</h3>
           <ul>
             <li class="footer__item"><a href="#">О нас</a></li>
             <li class="footer__item"><a href="#">Вернуться к проектам</a></li>
@@ -406,7 +405,6 @@
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/phone-call.svg" alt="">
               </div>
-              Tel : 269 1500 <br>
               Tel : 8-888-888-88-88 <br>
             </li>
             <li class="footer__item footer__item--mb-2">
@@ -435,7 +433,7 @@
     <!--/.container-->
   </footer>
   <!-- /.footer -->
-  <div class="modal">
+  <div class="modal hide">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
@@ -456,6 +454,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
