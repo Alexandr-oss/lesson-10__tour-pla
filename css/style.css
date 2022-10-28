@@ -1228,34 +1228,6 @@ li {
   display: none;
 }
 
-.modal__overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 143, 223, 0.39);
-  z-index: 100;
-}
-.modal__dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  max-width: 478px;
-  padding: 33px 88px;
-  background-color: #0A223D;
-  transform: translate(-50%, -50%);
-  border-radius: 8px;
-  color: #fff;
-  z-index: 101;
-}
-.modal__close {
-  position: absolute;
-  right: 18px;
-  top: 17px;
-  text-decoration: none;
-  cursor: pointer;
-}
 .modal__input {
   width: 100%;
   background-color: #fff;
@@ -1301,4 +1273,32 @@ li {
   line-height: 23px;
   text-transform: uppercase;
   color: #fff;
+}
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+}
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0A223D;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  color: #fff;
+  z-index: 101;
+}
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -17,13 +17,13 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   modal.addEventListener("click", (e) => {
-    if (e.target === modalOverlay) {
+    e.preventDefault();
+    if (e.target === modalOverlay || modalCloseBtn) {
       closeModal();
     }
   });
 
   triggerModal.addEventListener("click", openModal);
-  modalCloseBtn.addEventListener("click", closeModal);
 
   function setCursorPosition(pos, e) {
     e.focus();
@@ -37,22 +37,23 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function mask(e) {
-    //console.log('mask',e);
-    let matrix = this.placeholder, // .defaultValue
-      i = 0,
-      def = matrix.replace(/\D/g, ""),
-      val = this.value.replace(/\D/g, "");
-    def.length >= val.length && (val = def);
-    matrix = matrix.replace(/[_\d]/g, function (a) {
-      return val.charAt(i++) || "_";
-    });
-    this.value = matrix;
-    i = matrix.lastIndexOf(val.substr(-1));
-    i < matrix.length && matrix != this.placeholder
-      ? i++
-      : (i = matrix.indexOf("_"));
-    setCursorPosition(i, this);
+  class mask {
+    constructor() {
+      let matrix = this.placeholder, // .defaultValue
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = this.value.replace(/\D/g, "");
+      def.length >= val.length && (val = def);
+      matrix = matrix.replace(/[_\d]/g, function (a) {
+        return val.charAt(i++) || "_";
+      });
+      this.value = matrix;
+      i = matrix.lastIndexOf(val.substr(-1));
+      i < matrix.length && matrix != this.placeholder
+        ? i++
+        : (i = matrix.indexOf("_"));
+      setCursorPosition(i, this);
+    }
   }
 
   let input = document.querySelector("#online_phone");

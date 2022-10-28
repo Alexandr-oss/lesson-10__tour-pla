@@ -149,14 +149,14 @@
             <del class="price-old">₽ 10,500</del>
             <div class="price">
               <span class="price-new">₽ 8,500</span>
-              <button class="price__button card__button">Узнать больше</button>
+              <button data-id="onePack" class="price__button card__button first_modal-package">Узнать больше</button>
             </div>
             <!--/.price-->
           </div>
         </div>
         <!-- the end first card -->
 
-        <div class="item item-two">
+        <div id="twoPack" class="item item-two">
           <img class="item__image" src="img/packages_item/item_2.jpg" alt="">
           <div class="item__info">
             <h3 class="item__title">LUX* Belle Mare</h3>
@@ -177,13 +177,13 @@
             <del class="price-old">₽ 8,500</del>
             <div class="price">
               <span class="price-new">₽ 3,000</span>
-              <button class="price__button card__button">Узнать больше</button>
+              <button class="price__button card__button second_modal-package">Узнать больше</button>
             </div>
           </div>
         </div>
         <!-- the end second card -->
 
-        <div class="item item-three">
+        <div id="threePack" class="item item-three">
           <img class="item__image" src="img/packages_item/item_3.jpg" alt="">
           <div class="item__info">
             <h3 class="item__title">White Palace</h3>
@@ -204,14 +204,14 @@
             <del class="price-old">₽ 10,500</del>
             <div class="price">
               <span class="price-new">₽ 9,500</span>
-              <button class="price__button card__button">Узнать больше</button>
+              <button class="price__button card__button third_modal-package">Узнать больше</button>
             </div>
           </div>
           <!--/.item__info-->
         </div>
         <!-- the end third card -->
 
-        <div class="item item-four">
+        <div id="fourPack" class="item item-four">
           <img class="item__image" src="img/packages_item/item_4.jpg" alt="">
           <div class="item__info">
             <h3 class="item__title">Luxury Place</h3>
@@ -232,13 +232,13 @@
             <del class="price-old">₽ 4,500</del>
             <div class="price">
               <span class="price-new">₽ 2,500</span>
-              <button class="price__button card__button">Узнать больше</button>
+              <button class="price__button card__button fourth_modal-package">Узнать больше</button>
             </div>
           </div>
         </div>
         <!-- the end four card -->
 
-        <div class="item item-five">
+        <div fivePack class="item item-five">
           <img class="item__image" src="img/packages_item/item_5.jpg" alt="">
           <div class="item__info">
             <h3 class="item__title">Hotel Five Star</h3>
@@ -259,7 +259,7 @@
             <del class="price-old">₽ 6,500</del>
             <div class="price">
               <span class="price-new">₽ 3,500</span>
-              <button class="price__button card__button">Узнать больше</button>
+              <button class="price__button card__button fifth_modal-package">Узнать больше</button>
             </div>
           </div>
         </div>
@@ -451,6 +451,21 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
+
+  <div id="onePack" class="modal modal-packages hide">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal-packages -->
+
+
+
+
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
